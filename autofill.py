@@ -35,7 +35,8 @@ class JobApplicationAutofiller:
         # Autofill the address
         self.page.ele('@id:addressLine1').input(self.user_data['address']['street'])
         self.page.ele('@id:city').input(self.user_data['address']['city'])
-        #self.page.ele('@id:state').input(self.user_data['address']['state'])
+        self.page.ele('@|id:Region@|id:state@|id:State@|id:region').click()
+        self.page.ele(f'text:{self.user_data['address']['state']}', timeout=5).click()
         self.page.ele('@|id:zipCode@|id:postalCode').input(self.user_data['address']['zip_code'])
 
     def _fill_phone_number(self):
