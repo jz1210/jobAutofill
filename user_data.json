@@ -1,0 +1,15 @@
+{
+    "first_name": "Shouwang ",
+    "last_name": "Zhu",
+    "email": "johnzhu1024@gmail.com",
+    "phone": "9293107453",
+    "address": {
+        "street": "61-28 106th St",
+        "city": "Queens",
+        "state": "New York",
+        "zip_code": "11365"
+    },
+    "gender": "Male",
+    "race": "Asian",
+    "veteran_status": "not a veteran"
+}
